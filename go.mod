@@ -1,4 +1,4 @@
-module golang-logging
+module github.com/NguyenVanChien-99/golang-loging
 
 go 1.17
 
