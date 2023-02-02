@@ -7,14 +7,14 @@ import (
 )
 
 type LogrusFileHook struct {
-	file *os.File
+	file      *os.File
 	formatter *logrus.JSONFormatter
 }
 
 func NewFileHook(fileName string) *LogrusFileHook {
 	jsonFormat := &logrus.JSONFormatter{}
-	file,err := os.Create(fileName)
-	if err !=nil{
+	file, err := os.Create(fileName)
+	if err != nil {
 		panic("Cannot open file for logging")
 	}
 
